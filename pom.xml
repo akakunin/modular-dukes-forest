@@ -30,6 +30,12 @@
 		<glassfish.embedded.version>4.0</glassfish.embedded.version>
 		<cargo.plugin.version>1.4.4</cargo.plugin.version>
 		<glassfish.domain.name>domain1</glassfish.domain.name>
+		
+		<!-- AKA - Added two options to make build working in my demo -->
+		<glassfish.executables.suffix></glassfish.executables.suffix>
+		<glassfish.home.prefix>/Volumes/disk/work/test/modular-dukes-forest</glassfish.home.prefix>
+		
+		
 		<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>
 		<integration.container.id>glassfish4x</integration.container.id>
 	</properties>
