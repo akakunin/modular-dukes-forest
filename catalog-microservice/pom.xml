@@ -45,6 +45,7 @@
 			<version>1.1.12</version>
 		</dependency>
 
+		<!-- guava added to avoid error "NoClassDefFoundError: com/google/common/base/Predicate"  -->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
