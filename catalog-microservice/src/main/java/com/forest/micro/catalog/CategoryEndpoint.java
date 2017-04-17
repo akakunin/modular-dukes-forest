@@ -35,7 +35,7 @@ public class CategoryEndpoint {
 
 	@ApiMethod(produces = "application/json", description = "Get a list of all categories")
 	@ApiResponseObject
-	@RequestMapping("/cetegories")
+	@RequestMapping("/categories")
 	List<Category> getCategories() {
 		return categoryManager.getAll();
 	}
