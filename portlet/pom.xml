@@ -10,10 +10,13 @@
 	<artifactId>portlet</artifactId>
 	<packaging>pom</packaging>
 
-	<properties>
-		<liferay.version>7.0.0-m4</liferay.version>
-	</properties>
-
+	<repositories>
+		<repository>
+			<id>liferay-public</id>
+			<url>https://cdn.lfrs.sl/repository.liferay.com/nexus/content/groups/public/</url>
+		</repository>
+    </repositories>
+   
 	<dependencies>
 		<dependency>
 			<groupId>org.osgi</groupId>
@@ -29,8 +32,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
-			<artifactId>portal-service</artifactId>
-			<version>${liferay.version}</version>
+			<artifactId>com.liferay.portal.kernel</artifactId>
+			<version>2.0.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -47,14 +50,6 @@
 		</dependency>
 
 	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>liferay</id>
-			<url>http://cdn.repository.liferay.com/nexus/content/groups/public</url>
-		</repository>
-	</repositories>
-
 
 
 	<modules>
