@@ -52,6 +52,12 @@
 			<version>${jsondoc.version}</version>
 		</dependency>
 
+		<!-- guava added to avoid error "NoClassDefFoundError: com/google/common/base/Predicate"  -->
+ 		<dependency>
+ 			<groupId>com.google.guava</groupId>
+ 			<artifactId>guava</artifactId>
+ 			<version>${guava.version}</version>
+ 		</dependency>
 	</dependencies>
 
 	<!-- Package as an executable jar -->

@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+        <groupId>org.wso2.msf4j</groupId>
+        <artifactId>msf4j-service</artifactId>
+        <version>2.2.1</version>
+    </parent>
+    
+	<artifactId>catalog-msf4j-spring</artifactId>
+	<version>7.0.6-SNAPSHOT</version>
+	<name>Catalog MSF4J Microservice with Spring</name>
+
+	<repositories>
+        <!-- WSO2 released artifact repository -->
+        <repository>
+            <id>wso2.releases</id>
+            <name>WSO2 Releases Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+    
+	<dependencies>
+		<dependency>
+            <groupId>org.wso2.msf4j</groupId>
+            <artifactId>msf4j-spring</artifactId>
+            <version>${msf4j.version}</version>
+        </dependency>
+        
+		<dependency>
+			<groupId>org.glassfish.javaeetutorial</groupId>
+			<artifactId>usecases-catalog</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.glassfish.javaeetutorial</groupId>
+			<artifactId>catalog-inmemory-impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>		
+	</dependencies>
+	
+	<properties>
+        <microservice.mainClass>com.forest.Application</microservice.mainClass>
+    </properties>
+</project>
