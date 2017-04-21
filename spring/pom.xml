@@ -12,9 +12,10 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<spring.version>4.1.5.RELEASE</spring.version>
-		<spring-boot.version>1.2.2.RELEASE</spring-boot.version>
-		<jsondoc.version>1.1.12</jsondoc.version>
+		<spring.version>4.3.8.RELEASE</spring.version>
+		<spring-boot.version>1.5.3.RELEASE</spring-boot.version>
+		<jsondoc.version>1.2.17</jsondoc.version>
+		<guava.version>21.0</guava.version>
 	</properties>
 	
 	<modules>
