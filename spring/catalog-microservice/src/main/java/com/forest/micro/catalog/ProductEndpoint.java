@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.forest.micro.catalog.model.ProductObject;
-import com.forest.micro.catalog.wiring.ProductManager;
 import com.forest.model.Product;
+import com.forest.usecase.catalog.ProductManager;
 
 @RestController
 @Api(name = "Product", description = "Methods for managing products")

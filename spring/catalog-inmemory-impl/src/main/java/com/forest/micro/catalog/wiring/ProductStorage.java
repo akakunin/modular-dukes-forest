@@ -7,7 +7,6 @@ import java.util.TreeMap;
 
 import org.springframework.stereotype.Component;
 
-import com.forest.micro.catalog.model.ProductObject;
 import com.forest.model.Product;
 import com.forest.usecase.catalog.persistence.ProductPersistence;
 
@@ -82,9 +81,8 @@ public class ProductStorage implements ProductPersistence {
 	}
 
 	private void updateCategory(Product product) {
-		ProductObject productObject = (ProductObject) product;
-		Integer categoryId = productObject.getCategoryId();
-		if (categoryId != null) {
+		if (product.getCategory() != null) {
+			Integer categoryId = product.getCategory().getId();
 			List<Product> products = productsByCategory.get(categoryId);
 			if (products == null) {
 				products = new LinkedList<Product>();

@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.forest.micro.catalog.model.CategoryObject;
-import com.forest.micro.catalog.wiring.CategoryManager;
 import com.forest.model.Category;
+import com.forest.usecase.catalog.CategoryManager;
 
 @RestController
 @Api(name = "Category", description = "Methods for managing categories")
